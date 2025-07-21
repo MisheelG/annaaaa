@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+  <meta http-equiv="CONTENT-TYPE" content="text/html; charset=UTF-8">
+  <link rel="stylesheet" href="styles/style.css"/>
+  <title>Anna+Misheel</title>
+</head>
+<body>
+  <img src="styles/liebe.jpg" width="350" align="100">
+  <br>
+  <img src="https://gifcdn.com/32chh60oj4b9k6opjidhn.gif" alt="mailtimers.com" width="350" align="center">
+  <br>
+  <p id="percentage"></p>
+   <label id="label">
+     
+</label>
+  <script>
+    const val = main();
+    console.log(val);
+    const label = document.getElementById('label')
+    label.innerHTML = val + "% geschafft <progress value='" + val + "' max='100' align='100'></progress>";
+    //document.getElementById('progress'<progress value="70" max="100"></progress>.setAttribute("value", "70");
+  
+    function main(){
+    const dateOfLove = new Date('2025-07-29 13:30:00 GMT+01:00');
+    
+    const dateNow = new Date();
+    
+    const dateStart = new Date('2025-07-10 18:50:00 GMT+01:00');
+    
+    const diffCurr = dateOfLove - dateNow;
+    
+    const diffTotal = dateOfLove - dateStart;
+    
+    const percentageDone = (diffTotal - diffCurr) / diffTotal;
+    
+    return percentageDone * 100;
+};
+
+  </script>
+
+</body>
+</html>
