@@ -11,16 +11,13 @@
   <br>
   <img src="https://gifcdn.com/32chh60oj4b9k6opjidhn.gif" alt="mailtimers.com" width="100%" align="center">
   <br>
-  <p id="percentage"></p>
-   <label id="label" style="font-size:1.3em;">
-     
-</label>
+  <label id="label" style="font-size:1.3em;">
+  </label>
   <script>
     const val = main();
     console.log(val);
     const label = document.getElementById('label')
     label.innerHTML = val + "% geschafft <progress value='" + val + "' max='100' style='width:100%;'></progress>";
-    //document.getElementById('progress'<progress value="70" max="100"></progress>.setAttribute("value", "70");
   
     function main(){
     const dateOfLove = new Date('2025-07-29 13:30:00 GMT+01:00');
@@ -36,8 +33,7 @@
     const percentageDone = (diffTotal - diffCurr) / diffTotal;
     
     return percentageDone * 100;
-};
-
+  };
   </script>
 
 </body>
